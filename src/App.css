@@ -1,0 +1,101 @@
+@font-face {
+  font-family: 'almaraibold';
+  src: url('./fonts/Almarai-Bold.ttf')format('tff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'almarailight';
+  src: url('./fonts/Almarai-Light.ttf')format('tff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'almarairegular';
+  src: url('./fonts/Almarai-Regular.ttf')format('tff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.splash-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #F2E2D0;
+  font-family: 'almarairegular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.copyright-text{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  text-align: right;
+  opacity: 0.5
+}
+
+.landing-page{
+  background-image: url("/public/images/landing-page-bg.png");
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #F2E2D0;
+  font-family: 'almarairegular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+  /* Full height */
+  height: 100%;
+  background-color: #F2E2D0;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.custom-shape{
+  left:20px;
+  height: 0px;
+  width: 312px;
+  border-radius: 10px;
+  border-bottom: 35px solid #f57070;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: relative;
+                  
+}
+.custom-shape:before{
+  position: absolute;
+  content: "";
+  width: 0; 
+  height: 0; 
+  border-radius: 10px;
+  border-left: 0px solid transparent;
+  border-right: 312px solid transparent;
+  border-top: 187px solid #f57070;
+  top:35px;
+  right:0px;
+  
+
+}
